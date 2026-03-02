@@ -1,8 +1,8 @@
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import Projects from "./Projects.jsx";
-import Card from "./Card.jsx";
-import Button from "./Button.jsx";
+import Card from "./components/Card.jsx";
+import Button from "./components/Button.jsx";
 
 function App() {
   return (
