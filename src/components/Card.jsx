@@ -1,4 +1,4 @@
-import DashboardPic from ".assets/picdashboard.png";
+import DashboardPic from "../assets/picdashboard.png";
 
 function Card() {
   return (
