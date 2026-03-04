@@ -1,14 +1,14 @@
 import picdashboard from "../assets/picdashboard.png";
 
-function Card() {
+function Card({
+  title = "Project - Web App Dashboard",
+  text = "This is a description of the card. It provides more details about the content.",
+  image = picdashboard,
+}) {
   return (
     <div className="card">
-      <img src={picdashboard} alt="dashboard picture"></img>
-      <h2 className="card-title"> Project 1 - Web App Dashboard</h2>
-      <p className="card-text">
-        This is a description of the card. It provides more details about the
-        content.
-      </p>
+      <img src={image} alt={title}></img>
+      <h2 className="card-title">{title}</h2>
     </div>
   );
 }

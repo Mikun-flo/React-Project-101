@@ -52,19 +52,19 @@ export default function AddDev() {
     <form onSubmit={handleSubmit}>
       <input
         name="firstName"
-        value={student.firstName}
+        value={Dev.firstName}
         onChange={handleChange}
         placeholder="First Name"
       />
       <input
         name="lastName"
-        value={student.lastName}
+        value={Dev.lastName}
         onChange={handleChange}
         placeholder="Last Name"
       />
       <input
         name="age"
-        value={student.age}
+        value={Dev.age}
         onChange={handleChange}
         placeholder="Age"
       />

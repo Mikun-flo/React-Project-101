@@ -10,12 +10,32 @@ function App() {
     <div>
       <Header></Header>
       <Projects></Projects>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      <Card
+        title="Project 1 - Web App Dashboard"
+        text="Interactive analytics dashboard with real-time charts."
+      />
+      <Card
+        title="Project 2 - The 24th Avenue"
+        text="Full-stack online store with cart & payments."
+      />
+      <Card
+        title="Project 3 - Birthday Countdown"
+        text="A web timer that counts down to a particular set date."
+      />
+      <Card
+        title="Project 4 - Jewelry Blog"
+        text="A short article blog about jewelry trends."
+      />
+      <Card title="Project 5 - Suite V2" text="A mock up web landing page." />
+      <Card
+        title="Project 6 - The 24th Avenue E-commerce"
+        text="A Jewelry E-commerce website."
+      />
+      <Card
+        title="Project 7 - Ayomikun's Portfolio"
+        text="Personal portfolio website."
+      />
+      <Card title="Project 8 - Nil Nil Nil" text="Nil." />
       <Button></Button>
       <Dev
         name="Mikun Flo"
@@ -23,7 +43,6 @@ function App() {
         skills="HTML, CSS, JavaScript"
         isDev={true}
       ></Dev>
-
       <Footer></Footer>
     </div>
   );
