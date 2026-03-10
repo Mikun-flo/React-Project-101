@@ -40,8 +40,12 @@ export default function App() {
           text="Personal portfolio website."
         />
         <Card
-          title="Project 8 - Placeholder Text"
+          title="Project 8 - Placeholder Text I"
           text="This is just a placeholder text."
+        />
+        <Card
+          title="Project 9 - Placeholder Text II"
+          text="This is just another placeholder text."
         />
       </div>
       <hr></hr>
