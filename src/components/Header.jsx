@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>MIKUN FLO</h1>
+      <h1>AYOMIKUN FOLARIN</h1>
       <nav>
         <ul>
           <li>

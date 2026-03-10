@@ -5,7 +5,7 @@ import Card from "./components/Card.jsx";
 import Button from "./components/Button.jsx";
 import Dev from "./components/Dev.jsx";
 
-function App() {
+export default function App() {
   return (
     <div>
       <Header></Header>
@@ -26,7 +26,10 @@ function App() {
         title="Project 4 - Jewelry Blog"
         text="A short article blog about jewelry trends."
       />
-      <Card title="Project 5 - Suite V2" text="A mock up web landing page." />
+      <Card
+        title="Project 5 - Suite V2 - Landing Page"
+        text="A mock up web landing page."
+      />
       <Card
         title="Project 6 - The 24th Avenue E-commerce"
         text="A Jewelry E-commerce website."
@@ -35,7 +38,12 @@ function App() {
         title="Project 7 - Ayomikun's Portfolio"
         text="Personal portfolio website."
       />
-      <Card title="Project 8 - Nil Nil Nil" text="Nil." />
+      <Card
+        title="Project 8 - Placeholder Text"
+        text="This is just a placeholder text."
+      />
+      <hr></hr>
+
       <Button></Button>
       <Dev
         name="Mikun Flo"
@@ -47,5 +55,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

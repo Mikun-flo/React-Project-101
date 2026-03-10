@@ -9,6 +9,7 @@ function Card({
     <div className="card">
       <img src={image} alt={title}></img>
       <h2 className="card-title">{title}</h2>
+      <p className="card-text">{text}</p>
     </div>
   );
 }

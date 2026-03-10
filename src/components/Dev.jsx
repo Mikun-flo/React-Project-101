@@ -1,4 +1,4 @@
-function Dev(props) {
+function dev(props) {
   return (
     <div>
       <p>Name: {props.name}</p>
@@ -9,12 +9,12 @@ function Dev(props) {
   );
 }
 
-//export default Dev;
+//export default dev;
 
 import { useState } from "react";
 
 export default function AddDev() {
-  const [Dev, setDev] = useState({
+  const [dev, setdev] = useState({
     firstName: "",
     lastName: "",
     age: "",
@@ -23,7 +23,7 @@ export default function AddDev() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setDev((prev) => ({ ...prev, [name]: value }));
+    setdev((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -34,7 +34,7 @@ export default function AddDev() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(Dev),
+        body: JSON.stringify(dev),
       });
 
       if (response.ok) {
@@ -52,21 +52,21 @@ export default function AddDev() {
     <form onSubmit={handleSubmit}>
       <input
         name="firstName"
-        value={Dev.firstName}
+        value={dev.firstName}
         onChange={handleChange}
         placeholder="First Name"
       />
       <input
         name="lastName"
-        value={Dev.lastName}
+        value={dev.lastName}
         onChange={handleChange}
         placeholder="Last Name"
       />
       <input
-        name="age"
-        value={Dev.age}
+        name="email"
+        value={dev.email}
         onChange={handleChange}
-        placeholder="Age"
+        placeholder=" Your Email Address"
       />
       <button type="submit">Submit</button>
     </form>
