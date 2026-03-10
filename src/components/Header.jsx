@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>AYOMIKUN FOLARIN</h1>
+      <h1>Mikun's Portfolio</h1>
       <nav>
         <ul>
           <li>
