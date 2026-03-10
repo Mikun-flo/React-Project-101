@@ -17,8 +17,7 @@ export default function AddDev() {
   const [dev, setdev] = useState({
     firstName: "",
     lastName: "",
-    age: "",
-    course: "",
+    email,
   });
 
   const handleChange = (e) => {
