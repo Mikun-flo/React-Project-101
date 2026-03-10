@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <div>
+    <section className="projects-section">
       <h2>My Projects</h2>
       <p>Here are some of my recent projects:</p>
       <ul>
@@ -12,8 +12,7 @@ function Projects() {
         <li>Project 6 - The 24th Avenue II</li>
         <li>Project 7 - Portfolio Website</li>
       </ul>
-      <hr></hr>
-    </div>
+    </section>
   );
 }
 

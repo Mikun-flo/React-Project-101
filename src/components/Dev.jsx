@@ -4,7 +4,8 @@ export default function AddDev() {
   const [dev, setdev] = useState({
     firstName: "",
     lastName: "",
-    email,
+    email: "",
+    age: "",
   });
 
   const handleChange = (e) => {
@@ -52,7 +53,13 @@ export default function AddDev() {
         name="email"
         value={dev.email}
         onChange={handleChange}
-        placeholder=" Your Email Address"
+        placeholder="Your email"
+      />
+      <input
+        name="message"
+        value={dev.message}
+        onChange={handleChange}
+        placeholder="Message"
       />
       <button type="submit">Submit</button>
     </form>

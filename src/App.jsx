@@ -2,7 +2,6 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Projects from "./Projects.jsx";
 import Card from "./components/Card.jsx";
-import Button from "./components/Button.jsx";
 import Dev from "./components/Dev.jsx";
 
 export default function App() {
@@ -48,15 +47,19 @@ export default function App() {
           text="This is just another placeholder text."
         />
       </div>
-      <hr></hr>
 
-      <Button></Button>
-      <Dev
-        name="Mikun Flo"
-        role="Frontend Developer"
-        skills="HTML, CSS, JavaScript"
-        isDev={true}
-      ></Dev>
+      <section className="contact-form-section">
+        <h2 className="contact-form-title">Contact Me</h2>
+        <p className="contact-form-subtitle">Kindly drop your details</p>
+
+        <Dev
+          name="Mikun Flo"
+          role="Frontend Developer"
+          skills="HTML, CSS, JavaScript"
+          isDev={true}
+        ></Dev>
+      </section>
+
       <Footer></Footer>
     </div>
   );

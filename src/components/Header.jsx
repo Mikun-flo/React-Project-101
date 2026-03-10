@@ -32,7 +32,6 @@ function Header() {
             <a href="/contact">Contact Me</a>
           </li>
         </ul>
-        <hr></hr>
       </nav>
     </header>
   );
