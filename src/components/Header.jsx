@@ -14,7 +14,9 @@ function Header() {
             <a href="/store">Store</a>
           </li>
           <li>
-            <a href="/countdown">Countdown</a>
+            <a href="https://project-mikun.netlify.app/bday-countdown/">
+              Birthday Countdown
+            </a>
           </li>
           <li>
             <a href="/blog">Blog</a>
@@ -26,7 +28,9 @@ function Header() {
             <a href="/jewelry">Jewelry</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <a href="https://project-mikun.netlify.app/portfolio/">
+              Portfolio 1
+            </a>
           </li>
           <li>
             <a href="/contact">Contact Me</a>

@@ -1,16 +1,20 @@
+import { PROJECTS } from "../data";
+
 function Projects() {
   return (
     <section className="projects-section">
       <h2>My Projects</h2>
       <p>Here are some of my recent projects:</p>
       <ul>
-        <li>Project 1 - Web App Dashboard</li>
-        <li>Project 2 - The 24th Avenue I</li>
-        <li>Project 3 - Birthday Countdown</li>
-        <li>Project 4 - Jewelry Blog</li>
-        <li>Project 5 - SuiteV2</li>
-        <li>Project 6 - The 24th Avenue II</li>
-        <li>Project 7 - Portfolio Website</li>
+        {PROJECTS.map((project, index) => (
+          //Add the link of the project that takes you to the actual project page (Routing)You can also use React Router for better navigation
+          <li
+            key={index}
+            onClick={() => window.open("Add link here", "_blank")}
+          >
+            {project.title}
+          </li>
+        ))}
       </ul>
     </section>
   );

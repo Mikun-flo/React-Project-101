@@ -3,6 +3,7 @@ import Footer from "./components/Footer.jsx";
 import Projects from "./components/Projects.jsx";
 import Card from "./components/Card.jsx";
 import Dev from "./components/Dev.jsx";
+import { PROJECTS } from "./data.js";
 
 export default function App() {
   return (
@@ -10,42 +11,9 @@ export default function App() {
       <Header></Header>
       <Projects></Projects>
       <div className="cards-container">
-        <Card
-          title="Project 1 - Web App Dashboard"
-          text="Interactive analytics dashboard with real-time charts."
-        />
-        <Card
-          title="Project 2 - The 24th Avenue"
-          text="Full-stack online store with cart & payments."
-        />
-        <Card
-          title="Project 3 - Birthday Countdown"
-          text="A web timer that counts down to a particular set date."
-        />
-        <Card
-          title="Project 4 - Jewelry Blog"
-          text="A short article blog about jewelry trends."
-        />
-        <Card
-          title="Project 5 - Suite V2 - Landing Page"
-          text="A mock up web landing page."
-        />
-        <Card
-          title="Project 6 - The 24th Avenue E-commerce"
-          text="A Jewelry E-commerce website."
-        />
-        <Card
-          title="Project 7 - Ayomikun's Portfolio"
-          text="Personal portfolio website."
-        />
-        <Card
-          title="Project 8 - Placeholder Text I"
-          text="This is just a placeholder text."
-        />
-        <Card
-          title="Project 9 - Placeholder Text II"
-          text="This is just another placeholder text."
-        />
+        {PROJECTS.map((project, index) => (
+          <Card key={index} title={project.title} text={project.text} />
+        ))}
       </div>
 
       <section className="contact-form-section">
