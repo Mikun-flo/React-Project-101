@@ -1,6 +1,6 @@
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import Projects from "./Projects.jsx";
+import Projects from "./components/Projects.jsx";
 import Card from "./components/Card.jsx";
 import Dev from "./components/Dev.jsx";
 
